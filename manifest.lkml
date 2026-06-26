@@ -25,6 +25,9 @@ application: looker-stories {
     # Allows the extension to securely connect to Google's Gemini API domain
     external_api_urls: ["https://generativelanguage.googleapis.com"]
 
+    # Allows the extension to read and write the gemini_api_key user attribute client-side
+    scoped_user_attributes: ["gemini_api_key"]
+
     # Required Core API methods to fetch dashboard configurations, run queries, and read metadata
     core_api_methods: [
       "me",                          # Get current user context
