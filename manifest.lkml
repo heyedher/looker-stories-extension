@@ -19,6 +19,9 @@ application: looker-stories {
     # Allows the extension to navigate between pages inside Looker
     navigation: yes
 
+    # Allows the extension to open standalone full-screen tabs and popups
+    new_window: yes
+
     # Allows the extension to save states in the browser
     local_storage: yes
 
@@ -32,6 +35,8 @@ application: looker-stories {
     core_api_methods: [
       "me",                          # Get current user context
       "all_dashboards",              # List dashboards for the selector
+      "all_lookml_dashboards",       # List LookML dashboards for the selector
+      "search_lookml_dashboards",    # Search LookML dashboards reliably across SDK versions
       "dashboard",                   # Read dashboard tiles and configurations
       "run_query",                   # Execute existing dashboard queries
       "run_inline_query",            # Run queries directly from client definitions
