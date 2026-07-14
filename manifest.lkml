@@ -1,10 +1,10 @@
-project_name: "looker-stories"
+project_name: "looker-wrap"
 
-# Looker Stories Extension Manifest
+# Looker Wrap Extension Manifest
 # Copy and paste this configuration into your Looker project's manifest.lkml file.
 
-application: looker-stories {
-  label: "Looker Stories ⚡"
+application: looker-wrap {
+  label: "Looker Wrap ⚡"
 
   # 🚀 PRODUCTION MODE: Loads the static compiled file uploaded directly to your Looker project
   file: "bundle.js"
